@@ -4,25 +4,39 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <link href="Styles/Contactstylesheet.css" rel="stylesheet" />
 
+    
+    
     <div class="container">
-        <label for="fname"> First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name" />
 
+        <%-- First name --%>
+       <label for="fname"> First Name</label>
+     <asp:TextBox ID="FName" runat="server" placeholder="Your first name"></asp:TextBox>
 
-        <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <%-- Last name --%>
+       <label for="lname">Last Name</label>
+     <asp:TextBox ID="LName" runat="server" placeholder="Your last name"></asp:TextBox>
 
+        <%-- Email address --%>
         <label for="email"> Email Address</label>
-        <input type="text" name="email" maxlength="80" size="30" />
+       <asp:TextBox ID="email" runat="server" placeholder="Your email address" MaxLength="80" Font-Size="30"/>
 
+        
+        <%-- Subject --%>
         <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  <asp:TextBox ID="subject" runat="server" placeholder="Subject"> </asp:TextBox>
 
-    <input type="submit" value="Submit">
+        <%-- Message --%>
+         <label for="message">Message</label>
+<asp:TextBox ID="message" runat="server" placeholder="Write something.." style="height:200px" TextMode="MultiLine" ></asp:TextBox>
+    
+       
+        <%-- Submit button --%>
+        <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />
 
+      <div>  
+          <asp:Label ID="lblResult" runat="server"></asp:Label>
 
-
-         
+         </div>
 
     </div>
 

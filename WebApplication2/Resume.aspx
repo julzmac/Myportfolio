@@ -2,12 +2,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
     .auto-style5 {
-        width: 1091px;
-        height: 1208px;
+        width: 882px;
+        height: 930px;
     }
 </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <img src="Pictures/resumecap.PNG" class="auto-style5" />
+    <img src="Pictures/resume166.PNG" style="width: 881px" />" class="auto-style5" />
     
 </asp:Content>
